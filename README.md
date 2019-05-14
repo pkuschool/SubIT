@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+---
 
-You can use the [editor on GitHub](https://github.com/pkuschool/SubIT/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+title: SubIT 社团
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
+# SubIT
 
-### Markdown
+SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学校技术问题，包括 Office 365、希悦等 学校技术问题的解决、帮助。
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+邮件：[subit@i.pkuschool.edu.cn](mailto:subit@i.pkuschool.edu.cn)
 
-```markdown
-Syntax highlighted code block
+## 成员
 
-# Header 1
-## Header 2
-### Header 3
+### 组织者
 
-- Bulleted
-- List
+孙玉磊（@suenyu）
 
-1. Numbered
-2. List
+### 成员
 
-**Bold** and _Italic_ and `Code` text
+刘语辰、王毅驰、盛天成、陈叙传、朱文鹤
 
-[Link](url) and ![Image](src)
-```
+## 成就
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pkuschool/SubIT/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- 为教务做过大量工作
+  - 成绩申诉、衔接班学分抵算流程技术支持
+  - 家长开放日相关工作（导航网站、表单）
+- 为众多学生提供了技术上的帮助
