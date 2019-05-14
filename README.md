@@ -1,9 +1,9 @@
 ---
 
 title: SubIT 社团
+permalink: /index.html
 
 ---
-# SubIT
 
 SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学校技术问题，包括 Office 365、希悦等 学校技术问题的解决、帮助。
 
