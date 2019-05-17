@@ -1,2 +1,9 @@
 theme: jekyll-theme-cayman
 description: 助人向、技术向中心社团
+buttons: 
+  -
+    name: 主页
+    url: index.html
+  -
+    name: 答疑覆盖范围
+    url: if-or-not
