@@ -26,6 +26,7 @@
       {% if site.github.is_project_page %}
         {% for target in site.buttons %}
           <a href="./{{ target.url }}" class="btn">{{ target.name }}</a>
+        {% endif %}
         <!--<a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>-->
       {% endif %}
       {% if site.show_downloads %}
