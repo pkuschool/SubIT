@@ -5,9 +5,7 @@ permalink: /index.html
 
 ---
 
-<img src="./subit.jpg" width="110" align="left">
-
-# SubIT
+<img src="./subit.jpg" width="110" align="left" id='subit'><br>
 
 ![](https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.11-blue.svg)
 ![](https://img.shields.io/badge/Output_Status-%E5%92%95%E5%92%95%E5%92%95-red.svg)
