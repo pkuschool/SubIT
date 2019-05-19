@@ -7,3 +7,6 @@ buttons:
   -
     name: 答疑覆盖范围
     url: if-or-not
+  - 
+    name: 招新
+    url: hire
