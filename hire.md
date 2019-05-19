@@ -7,18 +7,19 @@ title: 招新
 
 ## 招新
 
-因为预计的人手不足，SubIT 将在这个学段逐渐进行招新事务。
+因为预计的人手不足，SubIT 将在这个学段进行招新事务。
 
 ### 招新渠道
 
-1. 内推
-2. 自主填写问卷
+1. 成员内推到下一种方法
+2. 想来的，自主填写问卷
 
 ### 预计任务
 
 - 偶尔参与教程写作
 - 在校内帮助他人
 - 在每年的入教（以及收取录取通知书）时对新一届进行教育
+- 搞事情！
 
 ### 收益
 
@@ -30,6 +31,7 @@ title: 招新
 - 给教务做各种事情
 - 得知一些内幕
 - 锻炼写作技巧
+- 使用博雅公众号
 - 涨粉
 - ...
 
@@ -42,8 +44,8 @@ title: 招新
 
 ### 报名筛选
 
-目前没有。填了就进。
+同道之人，何必筛选？
 
 ### 招新入口
 
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMk1WR0JBOFo2VE83VTdCWjZEMEwzRUFGNS4u" class="btn btn-content">填写招新问卷</a>
+<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMk1WR0JBOFo2VE83VTdCWjZEMEwzRUFGNS4u" class="btn btn-content">来吧</a>
