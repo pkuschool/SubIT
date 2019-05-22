@@ -5,7 +5,7 @@ buttons:
     name: 主页
     url: index.html
   -
-    name: 答疑覆盖范围
+    name: 答疑
     url: if-or-not
   - 
     name: 招新
