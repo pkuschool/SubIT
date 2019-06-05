@@ -11,7 +11,7 @@ permalink: /index.html
 
 <p style="
     padding-left: 120px;
-"><img src="https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.11-blue.svg" alt="">
+"><img src="https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.12-blue.svg" alt="">
 <img src="https://img.shields.io/badge/Output_Status-%E5%92%95%E5%92%95%E5%92%95-red.svg" alt="">
 <img src="https://img.shields.io/badge/%E6%80%BB%E4%BA%BA%E6%95%B0-5+1-yellow.svg" alt=""></p>
 
@@ -24,16 +24,16 @@ SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学
 ## 成员
 
 ### 2021届
-- 刘语辰（诚意书院）
-- 王毅驰（致知书院）
-- 盛天成（新民书院）
-- 陈叙传（明德书院）
-- 朱文鹤（格物书院）
-- 吴欣桐（正心书院）
+- **刘语辰（诚意书院）（社长）** <ycl03@i.pkuschool.edu.cn>
+- 王毅驰（致知书院）<wangyichi@i.pkuschool.edu.cn>
+- 盛天成（新民书院）<shengtiancheng@i.pkuschool.edu.cn>
+- 陈叙传（明德书院）<chenxuchuan@i.pkuschool.edu.cn>
+- 朱文鹤（格物书院）<zhuwenhe@i.pkuschool.edu.cn>
+- 吴欣桐（正心书院）<wuxintong1@i.pkuschool.edu.cn>
 
 ### 衔接班
-- 张文思
-- 沈俊阳
+- 张文思 <zhangwensi@i.pkuschool.edu.cn>
+- 沈俊阳 <shenjunyang@i.pkuschool.edu.cn>
 
 ## 成就
 
@@ -46,7 +46,8 @@ SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学
   - 飞龙湖分校
   - 北大附中工会
 - 设计新生入学365培训方案ing
-- 设计学校线上导航网页（目前状态：咕咕咕）
+- 为北大附中西三旗学校提供技术支持
+- 设计学校线上导航网页
 - 设计学校[应急导航页面](https://pkuschool.github.io/links/)
 - 设计[Adobe软件下载页面](https://pkuschool.github.io/adobedl)
 - ……
