@@ -67,4 +67,6 @@ title: 招新
 
 ### 招新入口
 
-<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMk1WR0JBOFo2VE83VTdCWjZEMEwzRUFGNS4u" class="btn btn-content">来吧</a>
+招新已结束。
+
+<!--<a href="https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMk1WR0JBOFo2VE83VTdCWjZEMEwzRUFGNS4u" class="btn btn-content">来吧</a>-->
