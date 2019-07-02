@@ -50,4 +50,4 @@ SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学
 - 设计学校线上导航网页
 - 设计学校[应急导航页面](https://pkuschool.github.io/links/)
 - 设计[Adobe软件下载页面](https://pkuschool.github.io/adobedl)
-- ……
+- 运营学校西楼大屏幕
