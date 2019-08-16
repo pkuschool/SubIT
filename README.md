@@ -24,9 +24,9 @@ SubIT 社团，是下属于博雅学院的中心社团，设立目的为解决�
 - 官网：就是这里 \| 不算沟通渠道
 
 
-## 成员
+# 成员
 
-### 2021届
+## 2021届
 - **刘语辰（诚意书院）（社长）** <YCL03@i.pkuschool.edu.cn>
 - 王毅驰（致知书院）<wangyichi@i.pkuschool.edu.cn>
 - 盛天成（新民书院）<shengtiancheng@i.pkuschool.edu.cn>
@@ -34,11 +34,11 @@ SubIT 社团，是下属于博雅学院的中心社团，设立目的为解决�
 - 朱文鹤（格物书院）<zhuwenhe@i.pkuschool.edu.cn>
 - 吴欣桐（正心书院）<wuxintong1@i.pkuschool.edu.cn>
 
-### 2022届
+## 2022届
 - 张文思（明德书院） <zhangwensi@i.pkuschool.edu.cn>
 - 沈俊阳（明德书院） <shenjunyang@i.pkuschool.edu.cn>
 
-## 成就
+# 成就
 
 - 为教务做过大量工作
   - [成绩申诉](https://mp.weixin.qq.com/s/EeCa3_i17T6fEsC_F6HaxA)、衔接班学分抵算流程技术支持
