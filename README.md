@@ -17,9 +17,14 @@ permalink: /index.html
 
 SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学校技术问题，包括 Office 365 等 学校技术问题的解决、帮助。
 
-邮件：[subit@i.pkuschool.edu.cn](mailto:subit@i.pkuschool.edu.cn)
+# 各种沟通渠道
+- 线下：西楼地下一层 B024/B025
+- 邮箱：<subit@i.pkuschool.edu.cn> | 建议使用校内邮箱发送
+- Yammer：SubIT 社团 | 私信抄送皆可
+- 公众号：博雅
+- 各社员 | 找到身边隐藏的SubIT社员并抓住询问即可
+- 官网：就是这里 | 不算沟通渠道
 
-地点：西楼地下一层，B024
 
 ## 成员
 
@@ -31,9 +36,9 @@ SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学
 - 朱文鹤（格物书院）<zhuwenhe@i.pkuschool.edu.cn>
 - 吴欣桐（正心书院）<wuxintong1@i.pkuschool.edu.cn>
 
-### 衔接班
-- 张文思 <zhangwensi@i.pkuschool.edu.cn>
-- 沈俊阳 <shenjunyang@i.pkuschool.edu.cn>
+### 2022届
+- 张文思（明德书院） <zhangwensi@i.pkuschool.edu.cn>
+- 沈俊阳（明德书院） <shenjunyang@i.pkuschool.edu.cn>
 
 ## 成就
 
@@ -45,9 +50,13 @@ SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学
 - 培训学校各部门、培训北大附中集团分校使用O365
   - 飞龙湖分校
   - 北大附中工会
-- 设计新生入学365培训方案ing
+- 设计新生入学 Office 365 培训方案
+- 为2022届从头撰写了新生指南，投入了使用并有20k以上的访问量（不完全统计）
 - 为北大附中西三旗学校提供技术支持
 - 设计学校线上导航网页
 - 设计学校[应急导航页面](https://pkuschool.github.io/links/)
 - 设计[Adobe软件下载页面](https://pkuschool.github.io/adobedl)
 - 运营学校西楼大屏幕
+    - 制作了十几张海报
+    - 为十多个个人/组织提供了服务
+
