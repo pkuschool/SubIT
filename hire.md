@@ -1,6 +1,6 @@
 ---
 
-permalink: /hire
+permalink: /oldhire
 title: 招新
 
 ---
