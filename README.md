@@ -5,17 +5,15 @@ permalink: /index.html
 
 ---
 
-<p><img src="./SubIT-Normal@512.png" height="170" align="right"></p>
+<p  style="height: 210px"><img src="./SubIT-Normal@512.png" height="170" align="right"></p>
 <!--
 <p style="font-size: 30px;margin-bottom: 0.25em;margin-top: -0.4em;padding-left: 120px;font-weight: bold;color: black;" id="subit">SubIT 社团</p> -->
 
-<p style="
-    padding-left: 120px;
-"><img src="https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.12-blue.svg" alt="">
+<p><img src="https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.12-blue.svg" alt="">
 <!--<img src="https://img.shields.io/badge/Output_Status-%E5%92%95%E5%92%95%E5%92%95-red.svg" alt="">-->
 <img src="https://img.shields.io/badge/%E6%80%BB%E4%BA%BA%E6%95%B0-8-green.svg" alt=""></p>
 
-SubIT社团，是下属于博雅学院的中心社团，设立目的为解决学校技术问题，包括 Office 365 等 学校技术问题的解决、帮助。
+SubIT 社团，是下属于博雅学院的中心社团，设立目的为解决学校技术问题，包括 Office 365 等学校技术问题的解决、帮助。
 
 # 各种渠道
 - 线下：西楼地下一层 B024/B025
