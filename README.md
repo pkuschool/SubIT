@@ -5,7 +5,7 @@ permalink: /index.html
 
 ---
 
-<img src="./subit.jpg" width="110" align="left">
+<img src="./SubIT-Bi-panel@512.png" width="110" align="left">
 
 <p style="font-size: 30px;margin-bottom: 0.25em;margin-top: -0.4em;padding-left: 120px;font-weight: bold;color: black;" id="subit">SubIT 社团</p>
 
