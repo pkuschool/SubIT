@@ -5,7 +5,7 @@ permalink: /index.html
 
 ---
 
-<script>console.log("恭喜发现彩蛋！https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMUE5MlpQTlhYOUtDTk5IWE9QVVBYTVNURS4u");</script>
+<script>console.log("这是一串神秘的字符：0x0fe23432");</script>
 
 <p  style="height: 210px"><img src="./SubIT-Normal@512.png" height="170"></p>
 <!--
