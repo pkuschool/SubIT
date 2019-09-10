@@ -5,7 +5,7 @@ permalink: /index.html
 
 ---
 
-<script>console.log("这是一串神秘的字符：0xfe23432");</script>
+<script>console.log("'0xfe23432'。你知道要把它填在哪里。");</script>
 
 <p  style="height: 210px"><img src="./SubIT-Normal@512.png" height="170"></p>
 <!--
