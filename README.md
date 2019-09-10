@@ -10,7 +10,8 @@ permalink: /index.html
 <p style="font-size: 30px;margin-bottom: 0.25em;margin-top: -0.4em;padding-left: 120px;font-weight: bold;color: black;" id="subit">SubIT 社团</p> -->
 
 <p><img src="https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.12-blue.svg" alt="">
-<script>console.log("恭喜发现彩蛋！https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMUE5MlpQTlhYOUtDTk5IWE9QVVBYTVNURS4u");</script>
+<script>console.log("恭喜发现彩蛋！https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMUE5MlpQTlhYOUtDTk5IWE9QVVBYTVNURS4u");
+</script>
 <!--<img src="https://img.shields.io/badge/Output_Status-%E5%92%95%E5%92%95%E5%92%95-red.svg" alt="">-->
 <img src="https://img.shields.io/badge/%E6%80%BB%E4%BA%BA%E6%95%B0-8-green.svg" alt=""></p>
 
