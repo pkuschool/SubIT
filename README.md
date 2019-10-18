@@ -13,15 +13,15 @@ permalink: /index.html
 
 <p><img src="https://img.shields.io/badge/%E6%88%90%E7%AB%8B%E4%BA%8E-2018.12-blue.svg" alt="">
 <!--<img src="https://img.shields.io/badge/Output_Status-%E5%92%95%E5%92%95%E5%92%95-red.svg" alt="">-->
-<img src="https://img.shields.io/badge/%E6%80%BB%E4%BA%BA%E6%95%B0-8-green.svg" alt=""></p>
+<img src="https://img.shields.io/badge/%E6%80%BB%E4%BA%BA%E6%95%B0-12-green.svg" alt=""></p>
 
 SubIT 社团，是下属于博雅学院的中心社团，设立目的为解决学校技术问题，包括 Office 365 等学校技术问题的解决、帮助。
 
 # 各种渠道
-- 线下：西楼地下一层 B024/B025
+- 线下：西楼地下一层极客地带 W029/030 + 一层 W116（电梯后）
 - 邮箱：<subit@i.pkuschool.edu.cn> \| 建议使用校内邮箱发送
 - Yammer：SubIT 社团 \| 私信抄送皆可
-- 公众号：博雅
+- 公众号：博雅 | 不接受消息
 - 各社员 \| 找到身边隐藏的SubIT社员并抓住询问即可
 - 官网：就是这里 \| 不算沟通渠道
 
@@ -39,6 +39,8 @@ SubIT 社团，是下属于博雅学院的中心社团，设立目的为解决�
 ## 2022届
 - 张文思（明德书院） <zhangwensi@i.pkuschool.edu.cn>
 - 沈俊阳（诚意书院） <shenjunyang@i.pkuschool.edu.cn>
+- 张颜开（致知书院） <zhangyankai@i.pkuschool.edu.cn>
+- 卢丹妮（格物书院） <ludanni@i.pkuschool.edu.cn>
 
 # 成就
 

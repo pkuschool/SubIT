@@ -1,12 +1,12 @@
 theme: jekyll-theme-cayman
 description: 助人向、技术向中心社团
-buttons: 
+buttons:
   -
     name: 主页
     url: "/SubIT/index.html"
   -
     name: 答疑
     url: "/SubIT/if-or-not"
-  - 
-    name: 预招新
+  -
+    name: 招新
     url: "https://forms.office.com/Pages/ResponsePage.aspx?id=dvGcSe515EmAwVKvzSjStSO8vWcCxT5Ai6EQbNHJpRpUMUE5MlpQTlhYOUtDTk5IWE9QVVBYTVNURS4u"
