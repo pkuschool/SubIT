@@ -39,6 +39,8 @@ SubIT 社团，是下属于博雅学院的中心社团，设立目的为解决�
 ## 2022届
 - 张文思（明德书院） <zhangwensi@i.pkuschool.edu.cn>
 - 沈俊阳（诚意书院） <shenjunyang@i.pkuschool.edu.cn>
+- 何天阳（正心书院） <hetianyang@i.pkuschool.edu.cn>
+- 高  幸（格物书院） <gaoxing@i.pkuschool.edu.cn>
 - 张颜开（致知书院） <zhangyankai@i.pkuschool.edu.cn>
 - 卢丹妮（格物书院） <ludanni@i.pkuschool.edu.cn>
 
