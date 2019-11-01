@@ -1,0 +1,18 @@
+---
+layout: default
+
+---
+<main class="article-content container">
+    <div class="article-title-container">
+        <h1 class="article-title" style="font-weight: normal;">{{page.title | default: "未命名"}}</h1>
+        <p class="tag-list">
+            <span class="badge" style="background-color: lightblue;">标签</span>
+            <span class="badge" style="background-color: lightblue;">Tag</span>
+        </p>
+        <p class="article-description">
+            {{page.description}}</p>
+    </div>
+    <article>
+        {{content}}
+    </article>
+</main>

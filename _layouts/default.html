@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh" style="min-height: 100vh;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/src/pure.css">
+    <!-- <link href="https://cdn.bootcss.com/pure/1.0.1/pure-min.css" rel="stylesheet"> -->
+    <link href="https://cdn.bootcss.com/pure/1.0.1/grids-responsive-min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/main.css">
+    <title>{{page.title}} | SubIT</title>
+</head>
+<body style="min-height: 100vh;">
+    <nav id="site-header">
+        <div id="site-header-content" class="container">
+            <span id="site-title">SubIT</span>
+            <div class="pure-menu pure-menu-horizontal" id="site-navigation">
+                <ul class="pure-menu-list" id="navigation-items">
+                    {% for item in site.data.nav %}
+                    <li class="pure-menu-item {%if item.subitems %} pure-menu-has-children pure-menu-allow-hover{%endif%} {%if page.tabname==item.name or page.title==item.name%}nav-current{%endif%}">
+                        <a href="{{item.url}}" class="pure-menu-link">{{item.name}}</a>
+                        {%if item.subitems %}
+                        <ul class="pure-menu-children menu-custom-children">
+                            {%for subitem in item.subitems %}
+                            <li class="pure-menu-item">
+                                <a href="{{subitem[1]}}" class="pure-menu-link">{{subitem[0]}}</a>
+                            </li>
+                            {%endfor%}
+                        </ul>
+                        {%endif%}
+                        </li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {{content}}
+</body>
+</html>

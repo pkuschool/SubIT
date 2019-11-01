@@ -1,0 +1,216 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', '思源黑体', 'Microsoft Yahei UI', sans-serif, monospace;
+    background-color: rgb(235, 235, 235);
+}
+
+
+#site-header {
+    background-color: #0071d4;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 1px 5px 0px #0071d4;
+}
+
+#site-header-content {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    /* width: 80%; */
+    height: 60px;
+    justify-content: space-between;
+}
+
+#site-title {
+    margin: 0px 15px 0px 15px;
+    font-size: 25px;
+    font-family: '思源黑体';
+    font-weight: bold;
+    user-select: none;
+}
+
+#site-navigation {
+    white-space: nowrap;
+    /* width: 500px; */
+}
+
+#navigation-items {
+    display: inline-block;
+}
+
+#navigation-items>li {
+    border-radius: 20px;
+}
+
+#navigation-items>li>a {
+    color: white;
+    border-radius: 3px;
+    transition: .15s background-color, .15s border-radius;
+    /* background-color: #0169c4; */
+}
+
+.nav-current>a{
+    color: #0071d4 !important;
+    background-color: #fff !important;
+    box-shadow: 0 1px 2px 0px #00000064;
+}
+
+#navigation-items>li>a:not(.nav-current):hover,
+#navigation-items>li>a:not(.nav-current):focus,
+#navigation-items>li>a:not(.nav-current):active,
+#navigation-items>li>a:not(.nav-current):visited,
+#navigation-items>li>a:not(.nav-current).active,
+#navigation-items>li>a:not(.nav-current)[active] {
+    background-color: #0e50a0;
+}
+
+#navigation-items>li.pure-menu-has-children>a:hover,
+#navigation-items>li.pure-menu-has-children>a:active {
+    border-radius: 3px 3px 0px 0px;
+}
+
+#navigation-items>li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+
+}
+
+.menu-custom-children{
+    padding-top: 5px;
+    /* border: 1px #ffffff01 solid; */
+    transition: .25s;
+    border-radius: 0px 5px 5px 5px;
+    background-color: #0e50a0;
+    color: white;
+    overflow: hidden;
+
+}
+
+.menu-custom-children>li>a{
+    color: rgb(231, 231, 231);
+    transition: .25s;
+}
+.menu-custom-children>li>a:hover {
+    color: white;
+    /* font-weight: bold; */
+    background-color: #ffffff65;
+    /* font-size: 17px; */
+}
+.menu-custom-children>li>a:focus{
+    color: white;
+    background-color: #0071d4;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 70%;
+    }
+}
+
+.article-content {
+    margin-top: 30px;
+}
+
+.article-title-container {
+    margin-bottom: 3px;
+    background-color: white;
+    padding: .5em 1.2em;
+    border-radius: 5px;
+    color: rgb(61, 61, 61);
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0px #00000026;
+    transition: .25s border;
+    border: 1px #ffffff01 solid;
+
+}
+
+.article-title-container:hover,
+.article-title-container:focus {
+    border: 1px rgb(189, 189, 189) solid;
+    color: rgb(36, 36, 36);
+
+}
+
+.article-title {
+    font-size: 45px;
+    margin: .1em 0 .2em;
+    word-wrap: break-word;
+    font-weight: normal;
+    /* transition: .25s; */
+}
+
+@media only screen and (max-width: 992px) {
+    .article-title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .article-title {
+        font-size: 25px;
+    }
+}
+
+.article-description {
+    word-wrap: break-word;
+    padding-left: 2px;
+}
+
+article {
+    margin: 0 1em;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+p[centered] {
+    text-align: center;
+}
+
+.badge{
+    padding: 4px 10px 6px;
+    border-radius: 5px;
+    margin-left: 3px;
+    font-size: 13px;
+    vertical-align: middle;
+    /* margin-bottom: 2px; */
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #00000001;
+    transition: .15s border-color;
+}
+.badge:hover{
+    border-color: #00000055;
+}
+
+.tag-list{
+    margin: 0;
+    word-wrap: break-word;
+    word-break: keep-all;
+    /* max-height: 37px; */
+    display: flex;
+    overflow: auto;
+    padding-bottom: 0;
+}
+
+.article-description{
+    margin-bottom: .3em;
+    margin-top: .7em;
+}
