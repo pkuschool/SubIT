@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh" style="min-height: 100vh;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,18 @@
     <!-- <link href="https://cdn.bootcss.com/pure/1.0.1/pure-min.css" rel="stylesheet"> -->
     <link href="https://cdn.bootcss.com/pure/1.0.1/grids-responsive-min.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/main.css">
-    <title>{{page.title}} | SubIT</title>
+
+    <title>{{page.title}} {%if page.title %}·{%endif%} SubIT</title>
 </head>
+
 <body style="min-height: 100vh;">
-    <nav id="site-header">
+    <nav id="site-header" {%if page.immersed %}class="immersed-header" {%endif%}>
         <div id="site-header-content" class="container">
-            <span id="site-title">SubIT</span>
+            <span id="site-title">
+                {%unless page.no-header-title%}
+                SubIT
+                {%endunless%}
+            </span>
             <div class="pure-menu pure-menu-horizontal" id="site-navigation">
                 <ul class="pure-menu-list" id="navigation-items">
                     {% for item in site.data.nav %}
@@ -28,7 +35,7 @@
                             {%endfor%}
                         </ul>
                         {%endif%}
-                        </li>
+                    </li>
                     {%endfor%}
                 </ul>
             </div>
@@ -36,4 +43,5 @@
     </nav>
     {{content}}
 </body>
+
 </html>

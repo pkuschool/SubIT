@@ -9,6 +9,9 @@ html {
     width: 100%;
     position: sticky;
     top: 0;
+}
+
+#site-header{
     box-shadow: 0px 1px 5px 0px #0071d4;
 }
 
@@ -48,6 +51,7 @@ html {
     border-radius: 3px;
     transition: .15s background-color, .15s border-radius;
     /* background-color: #0169c4; */
+    user-select: none;
 }
 
 .nav-current>a{
@@ -91,6 +95,7 @@ html {
 .menu-custom-children>li>a{
     color: rgb(231, 231, 231);
     transition: .25s;
+    user-select: none;
 }
 .menu-custom-children>li>a:hover {
     color: white;
@@ -213,4 +218,9 @@ p[centered] {
 .article-description{
     margin-bottom: .3em;
     margin-top: .7em;
+}
+
+.showcase-content{
+    width: 100%;
+    min-height: 500px;
 }

@@ -1,0 +1,24 @@
+.zone{
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.accent-background{
+    background-color: #0071d4;
+    color: white;
+}
+
+.no-top-padding{
+    padding-top: 0;
+    border-top: 0.1px #ffffff01 solid;
+}
+
+.master-title{
+    font-size: 55px;
+    margin: 0.33em 0;
+}
+
+.header-shadowed{
+    box-shadow: 0px 1px 5px 0px #0071d4;
+}
