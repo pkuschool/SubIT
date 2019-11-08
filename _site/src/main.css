@@ -1,3 +1,8 @@
+/*
+
+Site-wide CSS File.
+
+*/
 html {
     font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', '思源黑体', 'Microsoft Yahei UI', sans-serif, monospace;
     background-color: rgb(235, 235, 235);
@@ -9,6 +14,7 @@ html {
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 #site-header{
