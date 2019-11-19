@@ -236,3 +236,35 @@ p[centered] {
     width: 100%;
     min-height: 500px;
 }
+
+::-webkit-scrollbar {
+    background-color: rgb(206, 206, 206);
+    color: #c5c1b9;
+    width: 15px;
+    height: 10px;
+
+}
+
+::-webkit-scrollbar-track{
+    padding: 10px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #686868;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #686868;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #686868;
+}
+
+#site-header-logo{
+    cursor: pointer;
+}
