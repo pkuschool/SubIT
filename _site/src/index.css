@@ -1,0 +1,94 @@
+/*
+
+Layout-wide styling helpers.
+
+Mainly serving for index.html.
+
+*/
+.zone{
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.accent-background{
+    background-color: #0071d4;
+    color: white;
+}
+
+.no-top-padding{
+    padding-top: 0;
+    border-top: 0.1px #ffffff01 solid;
+}
+
+.master-title{
+    font-size: 75px;
+    margin: 0 0 0.23em;
+    z-index: 5;
+    color: white;
+}
+
+.site-title-panel{
+    position: relative;
+    z-index: 3;
+}
+
+#site-desc-content{
+    z-index: 2;
+    color: white;
+    /* text-align: right; */
+}
+.site-title-panel::after{
+    content: " ";
+    box-shadow: 0px 1px 5px 0px #0071d4;
+    /* background-color: antiquewhite; */
+    transform: skewY(-3deg);
+    z-index: -5;
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+    width: 100%;
+    height: 132%;
+    background-color: #0071d4;
+}
+.site-title-panel::before {
+    content: " ";
+    box-shadow: 0px 1px 5px 0px #a5a5a5;
+    /* background-color: antiquewhite; */
+    transform: skewY(6deg);
+    z-index: -6;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    width: 100%;
+    height: 132%;
+    background-color: #929292;
+}
+/*
+.logo-r{
+    background-color: white;
+    color: #0071d4;
+    height: 85px;
+    width: 85px;
+    border-radius: 15px;
+    padding: 0 20px;
+    margin-left: 6px;
+    font-size: 95px;
+    line-height: 85px;
+} */
+
+.logo-svg{
+    height: 175px;
+    margin-left: -30.5px;
+    margin-bottom: -27px;
+    opacity: 0.95;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.master-content{
+    font-size: 20px;
+    opacity: 0.9;
+    user-select: none;
+}
+
