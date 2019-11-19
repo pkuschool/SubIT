@@ -181,6 +181,9 @@ html {
     .article-title {
         font-size: 25px;
     }
+    .hide-on-small{
+        display: none;
+    }
 }
 
 .article-description {
