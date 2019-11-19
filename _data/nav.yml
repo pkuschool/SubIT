@@ -1,6 +1,6 @@
 # Navigation Tree Map
 - name: "主页"
-  url: "#"
+  url: "/"
 - name: "架构"
   url: "#"
   subitems:
@@ -8,6 +8,6 @@
     - ["平台与内容事业群", "#"]
     - ["管理与战略发展", "#"]
 - name: "新闻"
-  url: "#"
+  url: "/article-sample.html"
 - name: "联系"
   url: "#"
