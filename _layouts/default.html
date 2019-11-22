@@ -16,12 +16,13 @@
 <body style="min-height: 100vh;">
     <nav id="site-header" {%if page.immersed %}class="immersed-header" {%endif%}>
         <div id="site-header-content" class="container">
-            <span id="site-title">
+            <a href="#" class="pure-menu-link m-menu-opener no-left-padding"><img src="/src/nav.svg" alt="" height="15"></a>
+            <span id="site-title" class="hide-on-small">
                 {%unless page.no-header-title%}
                 <img src="/src/logowhite.svg" alt="" style="height: 45px; margin-top: 7px" id="site-header-logo" onclick="window.open('/', '_self')">
                 {%endunless%}
             </span>
-            <div class="pure-menu pure-menu-horizontal" id="site-navigation">
+            <div class="pure-menu pure-menu-horizontal hide-on-small" id="site-navigation">
                 <ul class="pure-menu-list" id="navigation-items">
                     {% for item in site.data.nav %}
                     <li class="pure-menu-item {%if item.subitems %} pure-menu-has-children pure-menu-allow-hover{%endif%} {%if page.tabname==item.name or page.title==item.name%}nav-current{%endif%}">
@@ -41,7 +42,47 @@
             </div>
         </div>
     </nav>
+    <div class="side-menu hidden">
+        <a href="#" class="pure-menu-link m-menu-opener" style="height: 2em;display: inline-flex; align-items: center;justify-content: space-between; width: calc(100% - 32px);margin: 6px 0;">
+            <img src="/src/nav.svg" alt="" height="15" style="margin-left: 2px;">
+            <img src="/src/logowhite.svg" alt="" style="height: 30px; margin-top: -2px" id="site-header-logo" onclick="window.open('/', '_self')">
+        </a>
+
+        <!-- <div id="site-title" style="margin-top: 4px;margin-bottom: 4px;">
+        </div> -->
+        <div class="pure-menu">
+            <ul class="pure-menu-list">
+                {% for item in site.data.nav %}
+                <li class="pure-menu-item m-side-content{%if item.subitems %} m-has-child pure-menu-allow-hover{%endif%} {%if page.tabname==item.name or page.title==item.name%}m-nav-current{%endif%}">
+                    <a href="{{item.url}}" class="pure-menu-link">{{item.name}}</a>
+                    {%if item.subitems %}
+                    <ul class="m-custom-child">
+                        {%for subitem in item.subitems %}
+                        <li class="pure-menu-item m-side-content">
+                            <a href="{{subitem[1]}}" class="pure-menu-link m-child-link">{{subitem[0]}}</a>
+                        </li>
+                        {%endfor%}
+                    </ul>
+                    {%endif%}
+                </li>
+                {%endfor%}
+            </ul>
+        </div>
+    </div>
+    <div class="side-bg hidden" onclick="toggleMenu()"></div>
     {{content}}
+    <script>
+        document.querySelectorAll(".m-menu-opener").forEach((item,index)=>{
+            item.addEventListener('click', ()=>{
+                document.querySelector('.side-menu').classList.toggle('hidden')
+                document.querySelector('.side-bg').classList.toggle('hidden')
+            })
+        })
+        function toggleMenu(){
+            document.querySelector('.side-menu').classList.toggle('hidden')
+            document.querySelector('.side-bg').classList.toggle('hidden')
+        }
+    </script>
 </body>
 
 </html>
