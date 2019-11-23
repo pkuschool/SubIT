@@ -16,7 +16,12 @@
 <body style="min-height: 100vh;">
     <nav id="site-header" {%if page.immersed %}class="immersed-header" {%endif%}>
         <div id="site-header-content" class="container">
-            <a href="#" class="pure-menu-link m-menu-opener no-left-padding"><img src="/src/nav.svg" alt="" height="15"></a>
+            <a href="#" class="pure-menu-link m-menu-opener no-left-padding hide-on-medium-and-up" style="display: inline-flex;align-items: center;justify-content: left;">
+                <img src="/src/nav.svg" alt="" height="15" class="hide-on-medium-and-up">
+                {%unless page.no-header-title%}
+                <img src="/src/logowhite.svg" class="hide-on-medium-and-up" alt="" style="height: 30px; margin-left: 15px; margin-top: 0px;" id="site-header-logo">
+                {%endunless%}
+            </a>
             <span id="site-title" class="hide-on-small">
                 {%unless page.no-header-title%}
                 <img src="/src/logowhite.svg" alt="" style="height: 45px; margin-top: 7px" id="site-header-logo" onclick="window.open('/', '_self')">
@@ -42,7 +47,7 @@
             </div>
         </div>
     </nav>
-    <div class="side-menu hidden">
+    <div class="side-menu m-side-hidden hidden" style="overflow: auto;">
         <a href="#" class="pure-menu-link m-menu-opener" style="height: 2em;display: inline-flex; align-items: center;justify-content: space-between; width: calc(100% - 32px);margin: 6px 0;">
             <img src="/src/nav.svg" alt="" height="15" style="margin-left: 2px;">
             <img src="/src/logowhite.svg" alt="" style="height: 30px; margin-top: -2px" id="site-header-logo" onclick="window.open('/', '_self')">
@@ -74,14 +79,17 @@
     <script>
         document.querySelectorAll(".m-menu-opener").forEach((item,index)=>{
             item.addEventListener('click', ()=>{
-                document.querySelector('.side-menu').classList.toggle('hidden')
+                document.querySelector('.side-menu').classList.toggle('m-side-hidden')
                 document.querySelector('.side-bg').classList.toggle('hidden')
             })
         })
         function toggleMenu(){
-            document.querySelector('.side-menu').classList.toggle('hidden')
+            document.querySelector('.side-menu').classList.toggle('m-side-hidden')
             document.querySelector('.side-bg').classList.toggle('hidden')
         }
+        setTimeout(()=>{
+            document.querySelector('.side-menu').classList.toggle('hidden')
+        },100)
     </script>
 </body>
 
