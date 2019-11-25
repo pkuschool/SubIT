@@ -8,6 +8,6 @@
     - ["平台与内容事业群", "#"]
     - ["管理与战略发展", "#"]
 - name: "新闻"
-  url: "/article-sample.html"
+  url: "./article-sample.html"
 - name: "联系"
   url: "#"
