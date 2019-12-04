@@ -5,40 +5,46 @@ Layout-wide styling helpers.
 Mainly serving for index.html.
 
 */
-.zone{
+
+* {
+    --accent: #0071d4
+}
+
+.zone {
     width: 100%;
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
-.accent-background{
+.accent-background {
     background-color: #0071d4;
     color: white;
 }
 
-.no-top-padding{
+.no-top-padding {
     padding-top: 0;
     border-top: 0.1px #ffffff01 solid;
 }
 
-.master-title{
+.master-title {
     font-size: 75px;
     margin: 0 0 0.23em;
     z-index: 5;
     color: white;
 }
 
-.site-title-panel{
+.site-title-panel {
     position: relative;
     z-index: 3;
 }
 
-#site-desc-content{
+#site-desc-content {
     z-index: 2;
     color: white;
     /* text-align: right; */
 }
-.site-title-panel::after{
+
+.site-title-panel::after {
     content: " ";
     box-shadow: 0px 1px 5px 0px #0071d4;
     /* background-color: antiquewhite; */
@@ -52,6 +58,7 @@ Mainly serving for index.html.
     background-color: #0071d4;
     transition: .25s transform;
 }
+
 .site-title-panel::before {
     content: " ";
     box-shadow: 0px 1px 5px 0px #a5a5a5;
@@ -65,6 +72,7 @@ Mainly serving for index.html.
     height: 132%;
     background-color: #bdbbbb;
 }
+
 /*
 .logo-r{
     background-color: white;
@@ -78,7 +86,7 @@ Mainly serving for index.html.
     line-height: 85px;
 } */
 
-.logo-svg{
+.logo-svg {
     width: 40%;
     min-width: 150px;
     max-width: 350px;
@@ -88,26 +96,126 @@ Mainly serving for index.html.
     -webkit-user-drag: none;
 }
 
-.master-content{
+.master-content {
     font-size: 20px;
     opacity: 0.9;
     user-select: none;
     transition: .25s font-size;
 }
 
-@media only screen and (max-width: 600px){
-    .master-content{
+@media only screen and (max-width: 600px) {
+    .master-content {
         font-size: 16px;
         margin-bottom: 0;
     }
-    .logo-svg{
+
+    .logo-svg {
         margin-top: -6px;
     }
-    .site-title-panel::before{
+
+    .site-title-panel::before {
         content: "";
         display: none;
     }
-    .site-title-panel::after{
+
+    .site-title-panel::after {
         transform: skewY(0deg);
     }
+}
+
+.card-badge-holder {
+    /* max-height: 45px; */
+    overflow: visible;
+}
+
+.card-badge {
+    margin: 5px 5px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+    border: 0.01px #ffffff01 solid;
+    transition: height .25s;
+    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
+        0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
+    overflow: hidden;
+    user-select: none;
+    width: fit-content;
+    background: #fafafa;
+}
+
+.card-badge-left {
+    padding: 0px 7.5px;
+    background-color: #0071d470;
+    /* height: calc(100% - 20px); */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif !important;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        'PingFang SC',
+        '思源黑体',
+        'Microsoft Yahei UI',
+        sans-serif,
+        monospace !important;
+}
+
+.card-badge-count {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    font-stretch: condensed;
+    /* margin-top: 2px; */
+}
+
+.card-badge-left[lighttext]>.card-badge-count {
+    color: rgb(255, 255, 255);
+}
+
+.card-badge-right {
+    margin: 5px 15px;
+    font-size: 16px;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        'PingFang SC',
+        '思源黑体',
+        'Microsoft Yahei UI',
+        sans-serif,
+        monospace !important;
+}
+
+.card-badge-holder[aftercontent]::after {
+    content: attr(aftercontent);
+    position: relative;
+    top: 0px;
+    left: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 15px;
+    border: 0.01px #ffffff01 solid;
+    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
+        0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
+    max-width: 200px;
+    word-wrap: break-word;
+    line-height: 1.4em;
+}
+
+.the-card{
+    margin: 5px;
+    padding: 10px 16px;
+    box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
+    0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
+    border-radius: 4px;
+    border: 0.1px #ffffff01 solid;
+    background: white;
+}
+.the-card>*{
+    word-wrap: break-word;
+    text-align: center;
+}
+.the-card>h3{
+    margin-top: .5em;
+    margin-bottom: .6em;
+    font-size: 25px;
 }
