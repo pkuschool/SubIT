@@ -1,5 +1,5 @@
-- count: "下属于"
-  label: "博雅学院"
+# - count: "下属于"
+#   label: "博雅学院"
 - count: 11
   label: "名社员"
   lineup: true

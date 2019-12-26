@@ -56,7 +56,7 @@ Mainly serving for index.html.
     width: 100%;
     height: 132%;
     background-color: #0071d4;
-    transition: .25s transform;
+    transition: .5s transform;
 }
 
 .site-title-panel::before {
@@ -71,8 +71,20 @@ Mainly serving for index.html.
     width: 100%;
     height: 132%;
     background-color: #bdbbbb;
+    transition: 2s all;
 }
 
+@media (prefers-color-scheme: dark){
+    .site-title-panel::before, .site-title-panel::after{
+        box-shadow: none;
+    }
+    .site-title-panel::before{
+        opacity: .6;
+    }
+    .site-title-panel::after{
+        background-color: #0b4980;
+    }
+}
 /*
 .logo-r{
     background-color: white;
@@ -115,11 +127,15 @@ Mainly serving for index.html.
 
     .site-title-panel::before {
         content: "";
-        display: none;
+        /* display: none; */
+        opacity: 0;
     }
 
     .site-title-panel::after {
         transform: skewY(0deg);
+    }
+    .zone {
+        padding-top: 0em;
     }
 }
 
@@ -134,15 +150,19 @@ Mainly serving for index.html.
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 4px;
+    border-radius: 3px;
     border: 0.01px #ffffff01 solid;
-    transition: height .25s;
+    transition: .25s;
     box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
         0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
     overflow: hidden;
     user-select: none;
     width: fit-content;
     background: #fafafa;
+}
+
+@media screen and (min-width: 601px){
+
 }
 
 .card-badge-left {
@@ -185,6 +205,15 @@ Mainly serving for index.html.
         monospace !important;
 }
 
+@media (prefers-color-scheme: dark){
+    .card-badge{
+        background: black;
+    }
+    .card-badge-count{
+        color: rgb(255, 255, 255, 0.8);
+    }
+}
+
 .card-badge-holder[aftercontent]::after {
     content: attr(aftercontent);
     position: relative;
@@ -208,7 +237,15 @@ Mainly serving for index.html.
     0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
     border-radius: 4px;
     border: 0.1px #ffffff01 solid;
-    background: white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+@media (prefers-color-scheme: dark){
+    .the-card{
+        background: black;
+        color: white;
+    }
 }
 .the-card>*{
     word-wrap: break-word;
@@ -216,6 +253,31 @@ Mainly serving for index.html.
 }
 .the-card>h3{
     margin-top: .5em;
-    margin-bottom: .6em;
+    /* margin-bottom: .6em; */
+    margin-bottom: 0;
     font-size: 25px;
+}
+@media screen and (max-width: 600px){
+    .the-card{
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+    .the-card>h3{
+        margin-bottom: .5em;
+        padding-right: 15px;
+        border-right: 1px solid grey;
+        font-weight: normal;
+    }
+    .the-card>p {
+        padding-left: 14px;
+    }
+    .card-badge-row{
+        /* width: 100%; */
+    }
+}
+
+.pure-g>p{
+    letter-spacing: normal;
+    line-height: 1.6em;
 }
