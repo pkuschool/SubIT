@@ -32,7 +32,7 @@ html {
 
     a {
         color: #50a2e9;
-        text-decoration: underline dotted;
+        text-decoration: underline dashed;
     }
 
     a:visited {

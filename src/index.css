@@ -173,7 +173,7 @@ Mainly serving for index.html.
 
 .card-badge-left {
     padding: 0px 7.5px;
-    background-color: #0071d470;
+    background-color: rgba(0, 113, 212, 0.439);
     /* height: calc(100% - 20px); */
     height: 100%;
     display: flex;
@@ -240,7 +240,7 @@ Mainly serving for index.html.
     box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
     0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
     border-radius: 4px;
-    border: 0.1px #ffffff01 solid;
+    border: 0.1px rgba(255, 255, 255, 0.004) solid;
     background-color: white;
     display: flex;
     flex-direction: column;

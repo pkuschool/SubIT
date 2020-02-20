@@ -61,12 +61,13 @@
     color: white;
     font-size: 18px;
     transition: background-color .15s;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.26);
 }
 
 .m-side-content:not(.m-nav-current)>a:hover,
 .m-side-content:not(.m-nav-current)>a:active,
 .m-side-content:not(.m-nav-current)>a:focus {
-    background-color: #ffffff2d;
+    background-color: rgba(255, 255, 255, 0.176);
 }
 
 
