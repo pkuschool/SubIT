@@ -26,7 +26,7 @@
     top: 0;
     bottom: 0;
     z-index: 90;
-    background-color: #00000078;
+    background-color: rgba(0, 0, 0, 0.471);
 }
 
 .m-custom-child {
