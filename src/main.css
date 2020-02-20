@@ -3,9 +3,8 @@
 Site-wide CSS File.
 
 */
-html,
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', '思源黑体', 'Microsoft Yahei UI', sans-serif, monospace;
+html {
+    font-family: -apple-system, BlinkMacSystemFont, '思源黑体', 'Microsoft Yahei UI', sans-serif, monospace;
     background-color: rgb(235, 235, 235);
     color: rgb(0, 0, 0);
     max-width: 100vw;
@@ -16,6 +15,7 @@ body {
     background-color: #0071d4;
     width: 100%;
     position: sticky;
+    position: -webkit-sticky;
     top: 0;
     z-index: 10;
     box-shadow: 0px 1px 5px 0px #0071d4;
@@ -31,20 +31,28 @@ body {
     }
 
     a {
-        color: #0071d4;
+        color: #50a2e9;
+        text-decoration: underline dotted;
     }
 
     a:visited {
-        text-decoration: underline dotted;
+        color: #ae93ec;
+        text-decoration: none;
     }
 
     #site-header {
         background-color: #0b4980;
         box-shadow: none;
     }
+    #site-header-content{
+        opacity: .8;
+    }
     footer{
         background: #0b4980 !important;
         box-shadow: none !important;
+    }
+    #footer-content{
+        opacity: .8;
     }
 }
 
@@ -85,7 +93,7 @@ body {
     border-radius: 3px;
     /* background-color: #0169c4; */
     user-select: none;
-    transition: .25s padding;
+    transition: .25s padding, .15s background-color;
 }
 
 @media only screen and (min-width: 993px) {
@@ -126,7 +134,7 @@ body {
 .menu-custom-children {
     padding-top: 5px;
     /* border: 1px #ffffff01 solid; */
-    transition: .25s;
+    transition: .15s;
     border-radius: 0px 5px 5px 5px;
     background-color: #0e50a0;
     color: white;
@@ -151,116 +159,25 @@ body {
     color: white;
     background-color: #0071d4;
 }
-
-.m-side-hidden {
-    transform: translateX(-75vw);
-}
-
-.side-menu {
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 100;
-    width: 65%;
-    max-width: 300px;
-    min-width: 150px;
-    background-color: #0071d4;
-    box-shadow: 0 0 8px 0px black;
-    transition: .25s all;
-}
-
-
-
-.side-bg {
-    content: " ";
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 90;
-    background-color: #00000078;
-}
-
-.m-custom-child {
-    padding-left: 00px;
-    font-size: 14px;
-    height: 0.001px;
-    overflow: hidden;
-    transition: .25s height;
-}
-
-.m-child-link {
-    font-size: 14px !important;
-    padding-left: 24px;
-}
-
-.m-has-child:focus>.m-custom-child,
-.m-has-child:active>.m-custom-child,
-.m-has-child:hover>.m-custom-child {
-    height: fit-content;
-}
-
-.m-has-child>a::after {
-    padding-left: 0.5em;
-    content: "\25B8";
-}
-
-.m-has-child:hover>a::after {
-    content: "\25BE";
-}
-
-.m-side-content>a {
-    color: white;
-    font-size: 18px;
-}
-
-.m-side-content:not(.m-nav-current)>a:hover,
-.m-side-content:not(.m-nav-current)>a:active,
-.m-side-content:not(.m-nav-current)>a:focus {
-    background-color: #ffffff2d;
-}
-
-.m-nav-current>a {
-    /* color: #0071d4 !important; */
-    font-weight: bold;
-    color: #0071d4;
-    background-color: white;
-    /* box-shadow: 0 0 6px 0 white; */
-}
-
-@media (prefers-color-scheme: dark) {
-    .side-menu {
-        background: #0b4980;
-        box-shadow: none;
+@media (prefers-color-scheme: dark){
+    .menu-custom-children{
+        background: black;
+        border: 1px grey solid;
+        border-radius: 5px !important;
+        padding-top: 0;
+        opacity: .8;
+        /* margin-top: 3px; */
     }
-    .m-nav-current>a{
-        background: #218ae6;
-        color: white;
-        text-rendering: optimizeLegibility;
-        font-weight: normal;
+    #navigation-items>li>a:not(.nav-current):hover,
+    #navigation-items>li>a:not(.nav-current):focus,
+    #navigation-items>li>a:not(.nav-current):active,
+    #navigation-items>li>a:not(.nav-current):visited,
+    #navigation-items>li>a:not(.nav-current).active,
+    #navigation-items>li>a:not(.nav-current)[active] {
+        background-color: #0000006c;
     }
 }
 
-
-/* .m-menu-opener{
-    padding-left: 0;
-} */
-.no-left-padding {
-    padding-left: 0px;
-}
-
-.m-menu-opener:hover,
-.m-menu-opener:active,
-.m-menu-opener:focus {
-    background: transparent !important;
-}
-
-.m-menu-opener::after {
-    content: none !important;
-    padding-left: 0 !important;
-}
 
 .container {
     margin: 0 auto;
@@ -290,72 +207,6 @@ body {
     }
 }
 
-.article-content {
-    margin-top: 30px;
-}
-
-.article-title-container {
-    margin-bottom: 3px;
-    background-color: white;
-    padding: .5em 1.2em;
-    border-radius: 5px;
-    color: rgb(61, 61, 61);
-    overflow: hidden;
-    box-shadow: 0 2px 5px 0px #00000026;
-    transition: .25s border;
-    border: 1px #ffffff01 solid;
-
-}
-
-.article-title-container:hover,
-.article-title-container:focus {
-    border: 1px rgb(189, 189, 189) solid;
-    color: rgb(36, 36, 36);
-
-}
-
-.article-title {
-    font-size: 45px;
-    margin: .1em 0 .2em;
-    word-wrap: break-word;
-    font-weight: normal;
-    /* transition: .25s; */
-}
-
-@media only screen and (max-width: 992px) {
-    .article-title {
-        font-size: 35px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .article-title {
-        font-size: 29px;
-    }
-
-    .hide-on-small {
-        display: none;
-    }
-}
-
-.article-description {
-    word-wrap: break-word;
-    padding-left: 2px;
-}
-
-article {
-    margin: 0 1em;
-}
-
-article p {
-    font-size: 18px;
-    line-height: 1.6em;
-}
-
-p[centered] {
-    text-align: center;
-}
-
 .badge {
     padding: 4px 10px 6px;
     border-radius: 5px;
@@ -372,6 +223,11 @@ p[centered] {
 .badge:hover {
     border-color: #00000055;
 }
+@media (prefers-color-scheme: dark) {
+    .badge{
+        background-color: #0b4980 !important;
+    }
+}
 
 .tag-list {
     margin: 0;
@@ -381,6 +237,7 @@ p[centered] {
     display: flex;
     overflow: auto;
     padding-bottom: 0;
+    align-items: center;
 }
 
 .article-description {
@@ -390,7 +247,7 @@ p[centered] {
 
 .showcase-content {
     width: 100%;
-    min-height: 500px;
+    min-height: calc(100vh - 148px);
 }
 
 ::-webkit-scrollbar {
@@ -440,4 +297,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.page-title {
+    font-size: 4em;
+    margin-top: 25px;
+    margin-bottom: 0.5em;
 }

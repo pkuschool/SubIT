@@ -1,8 +1,6 @@
-# - count: "下属于"
-#   label: "博雅学院"
-- count: 11
-  label: "名社员"
-  lineup: true
+- count: "<i class='iconfont icon-gerentouxiang' style='font-size: 20px'></i>"
+  label: "11名社员"
+  lineup: false
 - count: "2018.12"
   label: "成立于"
   reversed: true

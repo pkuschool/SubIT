@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href=".{% link src/pure.css %}">
+    <link rel="stylesheet" href="{% link src/pure.css %}">
     <!-- <link href="https://cdn.bootcss.com/pure/1.0.1/pure-min.css" rel="stylesheet"> -->
     <link href="https://cdn.bootcss.com/pure/1.0.1/grids-responsive-min.css" rel="stylesheet">
-    <link rel="stylesheet" href=".{% link src/main.css%}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1587838_5zwfypuvw0n.css">
+    <link rel="stylesheet" href="{% link src/main.css%}">
+    <link rel="stylesheet" href="{% link src/mobilemenu.css%}">
+    <link rel="stylesheet" href="{% link src/article.css%}">
 
     <title>{{page.title}} {%if page.title %}·{%endif%} SubIT</title>
 </head>
@@ -17,14 +20,14 @@
     <nav id="site-header" {%if page.immersed %}class="immersed-header" {%endif%}>
         <div id="site-header-content" class="container">
             <a href="#" class="pure-menu-link m-menu-opener no-left-padding hide-on-medium-and-up" style="display: inline-flex;align-items: center;justify-content: left;">
-                <img src=".{% link src/nav.svg %}" alt="" height="15" class="hide-on-medium-and-up">
+                <img src="{% link src/nav.svg %}" alt="" height="15" class="hide-on-medium-and-up">
                 {%unless page.no-header-title%}
-                <img src=".{% link src/logowhite.svg %}" class="hide-on-medium-and-up" alt="" style="height: 30px; margin-left: 15px; margin-top: 0px;" id="site-header-logo">
+                <img src="{% link src/logowhite.svg %}" class="hide-on-medium-and-up" alt="" style="height: 30px; margin-left: 15px; margin-top: 0px;" id="site-header-logo">
                 {%endunless%}
             </a>
             <span id="site-title" class="hide-on-small">
                 {%unless page.no-header-title%}
-                <img src=".{%link src/logowhite.svg %}" alt="" style="height: 45px; margin-top: 7px" id="site-header-logo" onclick="window.open('/', '_self')">
+                <img src="{%link src/logowhite.svg %}" alt="" style="height: 45px; margin-top: 7px" id="site-header-logo" onclick="window.open('/', '_self')">
                 {%endunless%}
             </span>
             <div class="pure-menu pure-menu-horizontal hide-on-small" id="site-navigation">
@@ -79,7 +82,7 @@
     <footer class="">
         <div class="container" id="footer-content">
             <div style="display: inline-flex;align-items: center;">
-                <img src=".{% link src/logowhite.svg %}" alt="" style="height: 30px;-webkit-user-drag: none;">
+                <img src="{% link src/logowhite.svg %}" alt="" style="height: 30px;-webkit-user-drag: none;">
                 <span style="margin-left: 8px;">编码</span>
             </div>
             <p style="opacity: .6;"><small>上次构建：{{site.time | date: "%Y/%m/%d, %H:%M:%S @%z"}}</small></p>

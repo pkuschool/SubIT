@@ -33,6 +33,7 @@ Mainly serving for index.html.
     color: white;
 }
 
+
 .site-title-panel {
     position: relative;
     z-index: 3;
@@ -79,7 +80,7 @@ Mainly serving for index.html.
         box-shadow: none;
     }
     .site-title-panel::before{
-        opacity: .6;
+        opacity: .2;
     }
     .site-title-panel::after{
         background-color: #0b4980;
@@ -106,6 +107,11 @@ Mainly serving for index.html.
     opacity: 0.95;
     user-select: none;
     -webkit-user-drag: none;
+}
+@media (prefers-color-scheme: dark){
+    .logo-svg, .master-content{
+        opacity: .8;
+    }
 }
 
 .master-content {
@@ -175,7 +181,6 @@ Mainly serving for index.html.
     font-family: sans-serif !important;
     font-family: -apple-system,
         BlinkMacSystemFont,
-        'PingFang SC',
         '思源黑体',
         'Microsoft Yahei UI',
         sans-serif,
@@ -198,7 +203,6 @@ Mainly serving for index.html.
     font-size: 16px;
     font-family: -apple-system,
         BlinkMacSystemFont,
-        'PingFang SC',
         '思源黑体',
         'Microsoft Yahei UI',
         sans-serif,
@@ -244,7 +248,7 @@ Mainly serving for index.html.
 @media (prefers-color-scheme: dark){
     .the-card{
         background: black;
-        color: white;
+        color: rgba(255, 255, 255, 0.8);
     }
 }
 .the-card>*{
@@ -256,8 +260,9 @@ Mainly serving for index.html.
     /* margin-bottom: .6em; */
     margin-bottom: 0;
     font-size: 25px;
+    flex-shrink: 0;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 767px){
     .the-card{
         flex-direction: row;
         align-items: center;
@@ -271,10 +276,12 @@ Mainly serving for index.html.
     }
     .the-card>p {
         padding-left: 14px;
+        flex-shrink: 1;
+        text-align: left;
     }
-    .card-badge-row{
-        /* width: 100%; */
-    }
+    /* .card-badge-row{
+         width: 100%;
+    } */
 }
 
 .pure-g>p{
