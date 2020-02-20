@@ -8,7 +8,7 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 230px;
+    min-height: 230px;
 }
 
 div.pure-g.custom-font{

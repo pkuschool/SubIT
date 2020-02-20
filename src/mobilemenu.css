@@ -106,7 +106,10 @@
 .no-left-padding {
     padding-left: 0px;
 }
+.m-menu-opener{
+    -webkit-tap-highlight-color: transparent;
 
+}
 .m-menu-opener:hover,
 .m-menu-opener:active,
 .m-menu-opener:focus {
