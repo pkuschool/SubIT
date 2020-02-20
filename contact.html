@@ -1,0 +1,62 @@
+---
+layout: showcase
+permalink: /contact.html
+tabname: "联系我们"
+---
+<link rel="stylesheet" href="./src/contact.css">
+<div class="zone">
+    <div class="container">
+        <h1 class="page-title">联系我们</h1>
+    </div>
+    <div class="container">
+        <div class="pure-g custom-font">
+            <div class="pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <div class="contact-card">
+                    <h3>线下</h3>
+                    <simple-box title="位于极客地带">西楼地下一层 W029</simple-box>
+                    <simple-box title="位于极客地带">西楼地下一层 W030</simple-box>
+                    <simple-box>西楼一层 W116</simple-box>
+                    <span>如需技术支持，请务必事先预约</span>
+                </div>
+            </div>
+            <div class="pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <div class="contact-card">
+                    <h3>Office 365</h3>
+                    <simple-box towards="mailto:subit@i.pkuschool.edu.cn">邮件：subit@i.pkuschool.edu.cn</simple-box>
+                    <simple-box towards="https://www.yammer.com/i.pkuschool.edu.cn/#/users/1691511088">Yammer：SubIT（抄送或私信）</simple-box>
+                    <span>我们尽量会在24小时内回复。<br>Yammer 私信回复时间未定。</span>
+                </div>
+            </div>
+            <div class="pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <div class="contact-card">
+                    <h3>各社员（微信）</h3>
+                    <simple-box>你需要找到社员并用微信联系</simple-box>
+                    <simple-box>依您的业务不同您可能将被转发到其他社员处</simple-box>
+                    <span style="filter: blur(0.5px);">野生的社员出现了！<br>野生的社员被抓获了！</span>
+                </div>
+            </div>
+            <div class="pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-2">
+                <div class="contact-card">
+                    <h3>公众号</h3>
+                    <simple-box horizontal>
+                        <img src="./src/boya-logo.jpg" alt="" class="boya-img">
+                        <div style="margin-left: 12px;">
+                            <h3 style="margin-bottom: 0;">博雅公众号</h3>
+                            <p style="margin-top: 8px;">不作为交流渠道使用，只发文章<br>悬浮于图片可放大</p>
+                        </div>
+                    </simple-box>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="min-height: 50px;"></div>
+</div>
+<script>
+    document.querySelectorAll('simple-box').forEach((item,index)=>{
+        if(item.hasAttribute('towards')){
+            item.addEventListener('click', ()=>{
+                window.open(item.getAttribute('towards'), '_blank')
+            })
+        }
+    })
+</script>
