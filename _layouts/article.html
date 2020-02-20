@@ -3,18 +3,22 @@ layout: default
 
 ---
 <main class="article-content container">
+    <div class="article-back" onclick="window.open('/news.html','_self')">
+        <i class="iconfont icon-xiangzuo"></i>
+        <span>返回新闻列表</span>
+    </div>
     <div class="article-title-container">
         <h1 class="article-title" style="font-weight: normal;">{{page.title | default: "未命名"}}</h1>
         <p class="tag-list">
-            <span class="badge" style="background-color: lightblue;">标签</span>
-            <span class="badge" style="background-color: lightblue;">标签</span>
-            <span class="badge" style="background-color: lightblue;">标签</span>
-            <span class="badge" style="background-color: lightblue;">标签</span>
+            <i class="iconfont icon-biaoqian tag-icon"></i>
+            {% for cat in page.tags %}
+            <span class="badge" style="background-color: lightblue;">{{cat}}</span>
+            {%endfor%}
         </p>
         <p class="article-description">
             {{page.description}}</p>
     </div>
-    <article>
+    <article style="min-height: 100vh;">
         {{content}}
     </article>
 </main>

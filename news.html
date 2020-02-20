@@ -1,0 +1,61 @@
+---
+layout: showcase
+permalink: /news.html
+tabname: "新闻"
+title: "新闻"
+---
+<link rel="stylesheet" href="./src/index.css">
+<link rel="stylesheet" href="/src/news.css">
+
+<div class="zone no-top-padding">
+    <div class="container">
+        <h1 class="page-title">新闻</h1>
+    </div>
+    <div class="container">
+        <!-- <div class="article-card">
+            <div class="article-card-title">文章标题</div>
+            <div class="article-card-info">文章简介</div>
+            <div class="article-card-content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl ipsum, accumsan id pharetra ac, pulvinar non nisl. Suspendisse a mi nunc. Mauris justo dui, bibendum sit amet odio nec, malesuada hendrerit sem. Nunc venenatis libero ut ante fringilla vehicula. Aliquam at arcu ut velit volutpat maximus ac nec justo. Proin id purus est. In ullamcorper sodales tincidunt. In sit amet tortor id quam cursus luctus non vitae ligula. Pellentesque finibus lacus et tellus gravida ultrices. Nunc feugiat leo id augue molestie, ut eleifend metus venenatis. Nam vel enim euismod, euismod est non, maximus risus. Donec mattis nisl non sapien aliquam elementum.
+
+                Cras id tincidunt justo, vitae semper est. Ut metus nisi, convallis quis commodo vel, maximus non dolor. Proin ac laoreet lorem. Suspendisse dignissim et libero et dictum. Mauris lectus lectus, accumsan a velit viverra, elementum facilisis ipsum. Sed semper ipsum in fringilla pretium. Sed commodo posuere placerat. Mauris venenatis, mauris condimentum dignissim ornare, sem massa rhoncus magna, nec molestie quam lorem eget neque. In vestibulum convallis arcu vitae pulvinar. Donec consectetur hendrerit pulvinar.
+            </div>
+            <div class="article-card-mask"></div>
+        </div> -->
+        <script>
+            function onClickArticle(event, url){
+                switch (event.button) {
+                    case 0: {
+                        window.open(url, '_self')
+                        break;
+                    }
+                    case 1: {
+                        window.open(url, '_blank')
+                        return false;
+                        break;
+                    }
+                }
+            }
+        </script>
+        {%for post in site.posts %}
+        {% if forloop.index0 < 2 %}
+        <div class="article-card" onmouseup="onClickArticle(event,'{{post.url}}')" onmousedown="return false">
+            <div class="article-card-title">{{post.title}}</div>
+            <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}} {%endfor%}</div>
+            <div class="article-card-content">
+                {{post.description | default: post.excerpt | limit: 100}}
+            </div>
+            <div class="article-card-mask"></div>
+        </div>
+        {% else %}
+        <div class="article-card" onmouseup="onClickArticle(event,'{{post.url}}')" onmousedown="return false">
+            <div class="article-card-title">{{post.title}}</div>
+            <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}} {%endfor%}</div>
+            <!-- <div class="article-card-content" style="max-height: 2em;">
+                {{post.description | default: post.excerpt | limit: 100}}
+            </div> -->
+        </div>
+        {%endif%}
+        {%endfor%}
+    </div>
+</div>
