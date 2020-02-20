@@ -1,0 +1,118 @@
+.m-side-hidden {
+    transform: translateX(-75vw);
+}
+
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 65%;
+    max-width: 300px;
+    min-width: 150px;
+    background-color: #0071d4;
+    box-shadow: 0 0 8px 0px black;
+    transition: .25s all;
+}
+
+
+
+.side-bg {
+    content: " ";
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 90;
+    background-color: #00000078;
+}
+
+.m-custom-child {
+    padding-left: 00px;
+    font-size: 14px;
+    height: 0.001px;
+    overflow: hidden;
+    transition: .25s height;
+}
+
+.m-child-link {
+    font-size: 14px !important;
+    padding-left: 24px;
+}
+
+.m-has-child:focus>.m-custom-child,
+.m-has-child:active>.m-custom-child,
+.m-has-child:hover>.m-custom-child {
+    height: fit-content;
+}
+
+.m-has-child>a::after {
+    padding-left: 0.5em;
+    content: "\25B8";
+}
+
+.m-has-child:hover>a::after {
+    content: "\25BE";
+}
+
+.m-side-content>a {
+    color: white;
+    font-size: 18px;
+    transition: background-color .15s;
+}
+
+.m-side-content:not(.m-nav-current)>a:hover,
+.m-side-content:not(.m-nav-current)>a:active,
+.m-side-content:not(.m-nav-current)>a:focus {
+    background-color: #ffffff2d;
+}
+
+
+.m-nav-current>a {
+    /* color: #0071d4 !important; */
+    font-weight: bold;
+    color: #0071d4;
+    background-color: white;
+    /* box-shadow: 0 0 6px 0 white; */
+}
+
+.m-side-content.m-nav-current>a:hover,
+.m-side-content.m-nav-current>a:active,
+.m-side-content.m-nav-current>a:focus {
+    background-color: #006ac7;
+}
+
+@media (prefers-color-scheme: dark) {
+    .side-menu {
+        background: #0b4980;
+        box-shadow: none;
+    }
+
+    .m-nav-current>a {
+        background: #218ae6;
+        color: white;
+        text-rendering: optimizeLegibility;
+        font-weight: normal;
+    }
+}
+
+
+/* .m-menu-opener{
+    padding-left: 0;
+} */
+.no-left-padding {
+    padding-left: 0px;
+}
+
+.m-menu-opener:hover,
+.m-menu-opener:active,
+.m-menu-opener:focus {
+    background: transparent !important;
+}
+
+.m-menu-opener::after {
+    content: none !important;
+    padding-left: 0 !important;
+}
