@@ -1,22 +1,22 @@
 [
 {
     "name": "主页",
-    "url": "./index.html"
+    "url": "/index.html"
 },
 {
     "name": "项目",
-    "url": "#"
+    "url": "/#"
 },
 {
     "name": "社员",
-    "url": "#"
+    "url": "/#"
 },
 {
     "name": "新闻",
-    "url": "./news.html"
+    "url": "/news.html"
 },
 {
     "name": "联系",
-    "url": "./contact.html"
+    "url": "/contact.html"
 }
 ]
