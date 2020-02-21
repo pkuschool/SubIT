@@ -143,6 +143,9 @@ Mainly serving for index.html.
     .zone {
         padding-top: 0em;
     }
+    .hide-on-small {
+        display: none !important;
+    }
 }
 
 .card-badge-holder {

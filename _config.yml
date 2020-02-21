@@ -1,2 +1,3 @@
 # Site Configuation
 baseurl: "/subit-new"
+timezone: "Asia/Shanghai"

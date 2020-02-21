@@ -43,7 +43,7 @@
     }
 
     .hide-on-small {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -86,7 +86,7 @@ p[centered] {
 @media (prefers-color-scheme: dark) {
     .article-title-container, .article-back {
         background: black;
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, 0.8) !important;
         border: 1px rgb(82, 82, 82) solid;
         transition: .25s;
     }

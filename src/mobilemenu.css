@@ -82,7 +82,7 @@
 .m-side-content.m-nav-current>a:hover,
 .m-side-content.m-nav-current>a:active,
 .m-side-content.m-nav-current>a:focus {
-    background-color: #006ac7;
+    background-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -96,6 +96,11 @@
         color: white;
         text-rendering: optimizeLegibility;
         font-weight: normal;
+    }
+    .m-side-content.m-nav-current>a:hover,
+    .m-side-content.m-nav-current>a:active,
+    .m-side-content.m-nav-current>a:focus {
+        background-color: #006ac7;
     }
 }
 

@@ -19,12 +19,18 @@
 <body style="min-height: 100vh;">
     <nav id="site-header" {%if page.immersed %}class="immersed-header" {%endif%}>
         <div id="site-header-content" class="container">
-            <a href="#" class="pure-menu-link m-menu-opener no-left-padding hide-on-medium-and-up" style="display: inline-flex;align-items: center;justify-content: left;">
-                <img src="{{site.baseurl}}{% link src/nav.svg %}" alt="" height="15" class="hide-on-medium-and-up">
-                {%unless page.no-header-title%}
-                <img src="{{site.baseurl}}{% link src/logowhite.svg %}" class="hide-on-medium-and-up" alt="" style="height: 30px; margin-left: 15px; margin-top: 0px;" id="site-header-logo">
-                {%endunless%}
+            <a href="#" class="pure-menu-link m-menu-opener no-left-padding hide-on-medium-and-up" style="display: inline-flex;align-items: center;justify-content: space-between;">
+                    <img src="{{site.baseurl}}{% link src/nav.svg %}" alt="" height="15" class="hide-on-medium-and-up">
+                    {%unless page.no-header-title%}
+                    <img src="{{site.baseurl}}{% link src/logowhite.svg %}" class="hide-on-medium-and-up" alt="" style="height: 30px; margin-left: 15px; margin-top: 0px;" id="site-header-logo">
+                    {%endunless%}
             </a>
+            {% if page.layout == "article" %}
+            <div class="article-back hide-on-medium-and-up" style="margin: 0 0 0 auto; color: black;" onclick="window.open('{{site.baseurl}}/news.html','_self')">
+                <!-- <i class="iconfont icon-xiangzuo"></i> -->
+                <span>返回新闻列表</span>
+            </div>
+            {%endif%}
             <span id="site-title" class="hide-on-small">
                 {%unless page.no-header-title%}
                 <img src="{{site.baseurl}}{%link src/logowhite.svg %}" alt="" style="height: 45px; margin-top: 7px" id="site-header-logo" onclick="window.open('{{site.baseurl}}/', '_self')">
@@ -83,9 +89,9 @@
         <div class="container" id="footer-content">
             <div style="display: inline-flex;align-items: center;">
                 <img src="{{site.baseurl}}{% link src/logowhite.svg %}" alt="" style="height: 30px;-webkit-user-drag: none;">
-                <span style="margin-left: 8px;">编码</span>
+                <span style="margin-left: 8px;">2018 - 2020</span>
             </div>
-            <p style="opacity: .6;"><small>上次构建：{{site.time | date: "%Y/%m/%d, %H:%M:%S @%z"}}</small></p>
+            <p style="opacity: .7;"><small>上次构建：{{site.time | date: "%Y/%m/%d %H时"}}</small></p>
         </div>
     </footer>
     <script>
