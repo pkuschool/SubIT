@@ -10,6 +10,10 @@ html {
     max-width: 100vw;
     overflow-x: hidden;
 }
+*{
+    --card-color-dark: #191919;
+    --bg-color-dark: black;
+}
 
 #site-header {
     background-color: #0071d4;
@@ -26,7 +30,7 @@ html {
 
     html,
     body {
-        background-color: #191919;
+        background-color: var(--bg-color-dark);
         color: rgba(255, 255, 255, 0.8);
     }
 
@@ -161,7 +165,7 @@ html {
 }
 @media (prefers-color-scheme: dark){
     .menu-custom-children{
-        background: black;
+        background: var(--card-color-dark);
         border: 1px grey solid;
         border-radius: 5px !important;
         padding-top: 0;
@@ -174,7 +178,7 @@ html {
     #navigation-items>li>a:not(.nav-current):visited,
     #navigation-items>li>a:not(.nav-current).active,
     #navigation-items>li>a:not(.nav-current)[active] {
-        background-color: #0000006c;
+        background-color: #1919196c;
     }
 }
 
@@ -216,12 +220,12 @@ html {
     /* margin-bottom: 2px; */
     cursor: pointer;
     user-select: none;
-    border: 1px solid #00000001;
+    border: 1px solid #19191901;
     transition: .15s border-color;
 }
 
 .badge:hover {
-    border-color: #00000055;
+    border-color: #19191955;
 }
 @media (prefers-color-scheme: dark) {
     .badge{

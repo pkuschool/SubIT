@@ -214,7 +214,7 @@ Mainly serving for index.html.
 
 @media (prefers-color-scheme: dark){
     .card-badge{
-        background: black;
+        background: var(--card-color-dark);
     }
     .card-badge-count{
         color: rgb(255, 255, 255, 0.8);
@@ -250,7 +250,7 @@ Mainly serving for index.html.
 }
 @media (prefers-color-scheme: dark){
     .the-card{
-        background: black;
+        background: var(--card-color-dark);
         color: rgba(255, 255, 255, 0.8);
     }
 }
