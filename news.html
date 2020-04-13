@@ -24,6 +24,7 @@ title: "新闻"
         </div> -->
         <script>
             function onClickArticle(event, url){
+                event.preventDefault()
                 switch (event.button) {
                     case 0: {
                         window.open(url, '_self')

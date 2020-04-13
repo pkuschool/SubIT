@@ -13,6 +13,13 @@
     transition: .25s all;
     margin-bottom: 10px;
     box-sizing: border-box;
+    transform: scale(0.98);
+
+}
+.article-card:hover{
+    box-shadow: 0 6.4px 14.4px 0 rgba(0, 0, 0, .132),
+    0 1.2px 3.6px 0 rgba(0, 0, 0, .108);
+    transform: scale(1);
 
 }
 .article-card-title {
@@ -57,18 +64,19 @@
 
 @media (prefers-color-scheme: dark) {
     .article-card {
-        background: black;
+        background: var(--card-color-dark);
         color: white;
         box-shadow: none;
         border: 1px rgb(82, 82, 82) solid;
     }
 
     .article-card:hover {
-        border-color: rgb(182, 182, 182);
+        box-shadow: none;
+        border-color: rgb(141, 141, 141);
     }
 
     .article-card-mask {
-        background: linear-gradient(to bottom, #00000030 0%, black 90%);
+        background: linear-gradient(to bottom, #00000030 0%, var(--card-color-dark) 90%);
     }
     .article-card:hover>.article-card-title {
         color: #89b8e2;
