@@ -306,6 +306,9 @@ Mainly serving for index.html.
         background: var(--card-color-dark);
         color: rgba(255, 255, 255, 0.8);
     }
+    .pure-button.pure-button-primary{
+        color: white !important;
+    }
 }
 
 .the-card>* {
@@ -351,12 +354,10 @@ Mainly serving for index.html.
     line-height: 1.6em;
 }
 
-.not-card {
-    width: ;
-}
+
 
 .pure-button {
     box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
         0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
-        margin: 0 5px;
+    margin: 0 5px;
 }

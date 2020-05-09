@@ -50,12 +50,12 @@ body{
         color: rgba(255, 255, 255, 0.8);
     }
 
-    a:not(.pure-button) {
+    a {
         color: #50a2e9;
         text-decoration: underline dashed;
     }
 
-    a:not(.pure-button):visited {
+    a:visited {
         color: #ae93ec;
         text-decoration: none;
     }
