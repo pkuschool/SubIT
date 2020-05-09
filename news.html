@@ -1,8 +1,8 @@
 ---
 layout: showcase
 permalink: /news.html
-tabname: "新闻"
-title: "新闻"
+tabname: "新闻推送"
+title: "新闻推送"
 ---
 <link rel="stylesheet" href="{{site.baseurl}}/src/index.css">
 <link rel="stylesheet" href="{{site.baseurl}}/src/news.css">
@@ -23,10 +23,12 @@ title: "新闻"
             <div class="article-card-mask"></div>
         </div> -->
         <script>
-            function onClickArticle(event, url){
+            function onClickArticle(event, url, index){
                 event.preventDefault()
                 switch (event.button) {
                     case 0: {
+                        document.querySelector('#article'+index).style.transform = 'scale(1.3)'
+                        document.querySelector('#article'+index).style.opacity = 0.5
                         window.open(url, '_self')
                         break;
                     }
@@ -40,7 +42,7 @@ title: "新闻"
         </script>
         {%for post in site.posts %}
         {% if forloop.index0 < 2 %}
-        <div class="article-card" onmouseup="onClickArticle(event,'.{{post.url}}')" onmousedown="return false">
+        <div class="article-card" id="article{{forloop.index0}}" onmouseup="onClickArticle(event,'.{{post.url}}', {{forloop.index0}})" onmousedown="return false">
             <div class="article-card-title">{{post.title}}</div>
             <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}} {%endfor%}</div>
             <div class="article-card-content">

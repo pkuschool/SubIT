@@ -29,6 +29,11 @@
     transition: .15s;
     z-index: 5;
 }
+@media screen and (max-width: 600px){
+    .article-card-title{
+        font-size: 25px;
+    }
+}
 .article-card:hover>.article-card-title{
     color: #0071d4;
 }
