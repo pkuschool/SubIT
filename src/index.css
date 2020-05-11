@@ -359,5 +359,5 @@ Mainly serving for index.html.
 .pure-button {
     box-shadow: 0 1.6px 3.6px 0 rgba(0, 0, 0, .132),
         0 0.3px 0.9px 0 rgba(0, 0, 0, .108);
-    margin: 0 5px;
+    margin: 5px 5px;
 }
