@@ -13,7 +13,7 @@ title: "历届社员"
         <p>点击卡片以获得更多信息</p>
         <!-- 为了未来考虑，届别是倒着数的。 -->
         {%for year in site.data.member %}
-        <h2 id="year{{year.year}}">{{year.year}} 届</h2>
+        <h2 id="year{{year.year}}">{{year.year}}</h2>
         <div class="pure-g">
             {%for person in year.member %}
             <div class="pure-u-1-1 pure-u-md-1-2 pure-u-lg-1-3">
