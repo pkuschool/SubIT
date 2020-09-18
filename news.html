@@ -23,12 +23,12 @@ title: "新闻推送"
             <div class="article-card-mask"></div>
         </div> -->
         <script>
-            function onClickArticle(event, url, index){
+            function onClickArticle(event, url, index) {
                 event.preventDefault()
                 switch (event.button) {
                     case 0: {
-                        document.querySelector('#article'+index).style.transform = 'scale(1.3)'
-                        document.querySelector('#article'+index).style.opacity = 0.5
+                        document.querySelector('#article' + index).style.transform = 'scale(1.3)'
+                        document.querySelector('#article' + index).style.opacity = 0.5
                         window.open(url, '_self')
                         break;
                     }
@@ -42,9 +42,11 @@ title: "新闻推送"
         </script>
         {%for post in site.posts %}
         {% if forloop.index0 < 2 %}
-        <div class="article-card" id="article{{forloop.index0}}" onmouseup="onClickArticle(event,'.{{post.url}}', {{forloop.index0}})" onmousedown="return false">
+        <div class="article-card" id="article{{forloop.index0}}"
+            onmouseup="onClickArticle(event,'.{{post.url}}', {{forloop.index0}})" onmousedown="return false">
             <div class="article-card-title">{{post.title}}</div>
-            <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}} {%endfor%}</div>
+            <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}}
+                {%endfor%}</div>
             <div class="article-card-content">
                 {{post.description | default: post.excerpt | limit: 100}}
             </div>
@@ -52,8 +54,10 @@ title: "新闻推送"
         </div>
         {% else %}
         <div class="article-card" onmouseup="onClickArticle(event,'.{{post.url}}')" onmousedown="return false">
+           
             <div class="article-card-title">{{post.title}}</div>
-            <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}} {%endfor%}</div>
+            <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}}
+                {%endfor%}</div>
             <!-- <div class="article-card-content" style="max-height: 2em;">
                 {{post.description | default: post.excerpt | limit: 100}}
             </div> -->

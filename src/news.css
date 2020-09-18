@@ -14,7 +14,8 @@
     margin-bottom: 10px;
     box-sizing: border-box;
     transform: scale(0.98);
-
+    padding-left: 50px;
+    padding-top: 30px;
 }
 .article-card:hover{
     box-shadow: 0 6.4px 14.4px 0 rgba(0, 0, 0, .132),
