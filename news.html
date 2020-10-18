@@ -53,8 +53,8 @@ title: "新闻推送"
             <div class="article-card-mask"></div>
         </div>
         {% else %}
-        <div class="article-card" onmouseup="onClickArticle(event,'.{{post.url}}')" onmousedown="return false">
-           
+        <div class="article-card" id="article{{forloop.index0}}" onmouseup="onClickArticle(event,'.{{post.url}}', {{forloop.index0}})" onmousedown="return false">
+
             <div class="article-card-title">{{post.title}}</div>
             <div class="article-card-info">{{post.date | date: "%Y年%m月%d日"}} · {%for tag in post.tags%}{{tag}}
                 {%endfor%}</div>
