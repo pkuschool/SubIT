@@ -19,6 +19,13 @@ isarticle: 1
         <p class="article-description">
             {{page.description}}</p>
     </div>
+    <style>
+        @media screen and (max-width:600px) {
+            article {
+                margin: auto 0 !important;
+            }
+        }
+    </style>
     <article style="min-height: 100vh;margin-bottom: 75px;">
         {{content}}
     </article>
