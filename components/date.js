@@ -1,3 +1,5 @@
+//解析时间的组件，历史遗留问题
+
 import { parseISO, format } from 'date-fns'
 
 export default function Date({ dateString }) {

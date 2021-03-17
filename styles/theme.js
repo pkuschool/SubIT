@@ -1,3 +1,5 @@
+//全局material主题设置，不要乱改！！！
+
 import { createMuiTheme } from '@material-ui/core'
 
 export const theme = createMuiTheme({

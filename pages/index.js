@@ -1,3 +1,5 @@
+//主页
+
 import Layout from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import { theme } from '../styles/theme'

@@ -1,3 +1,5 @@
+//底栏，已完成，待优化
+
 import { makeStyles, MuiThemeProvider } from "@material-ui/core"
 import { theme } from '../styles/theme'
 import Image from 'next/image'

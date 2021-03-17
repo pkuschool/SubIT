@@ -1,3 +1,5 @@
+//所有页面的最外层包装，负责把页面内容放在导航栏和底栏之间
+
 import Head from 'next/head'
 import NavBar from './navBar'
 import BottomBar from './bottomBar'
