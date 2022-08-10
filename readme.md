@@ -42,3 +42,7 @@
 可以使用 [Pure.css](https://purecss.io/)，但鼓励自己手工写类 / 用已经写好的类。
 
 图标建议用 [iconsvg](https://iconsvg.xyz/)，用的不多，设置为 24px, 1.5px, currentColor, round, round
+
+## 维护 TODO
+
+详见：[TODO.md](todo.md)
